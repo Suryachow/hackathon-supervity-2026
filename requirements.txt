@@ -1,0 +1,10 @@
+flask
+flask-cors
+faiss-cpu
+sentence-transformers
+pandas
+scikit-learn
+tqdm
+requests
+numpy
+python-dotenv

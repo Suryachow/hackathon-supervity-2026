@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Services Portal</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/enhancements.css">
+    <link rel="stylesheet" href="/static/css/escalation.css">
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-categories">
+            <a href="#" class="nav-category active">INDIVIDUAL</a>
+            <a href="#" class="nav-category">BUSINESS</a>
+            <a href="#" class="nav-category">INVESTORS</a>
+        </div>
+        <div class="nav-brand-container">
+            <div class="brand-logo">
+                <i class="fas fa-broadcast-tower"></i>
+                <span class="brand-name">NetConnect</span>
+            </div>
+            <div class="main-nav">
+                <a href="#">Services</a>
+                <a href="#">Prepaid</a>
+                <a href="#">Postpaid</a>
+                <a href="#">Wi-Fi</a>
+                <a href="#">DTH</a>
+                <a href="#">Bank</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="nav-actions">
+                <button class="nav-icon-btn"><i class="fas fa-search"></i></button>
+                <button class="account-btn"><i class="fas fa-user-circle"></i> Account</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="portal-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumb">
+            <a href="#">Home</a> <i class="fas fa-chevron-right"></i> <span class="current">Postpaid</span>
+        </div>
+
+        <!-- Split Layout -->
+        <div class="split-container">
+            <!-- Left: Hero Section -->
+            <section class="hero-section">
+                <h1 class="main-title">Get Network AI Connection</h1>
+                <p class="main-subtitle">Enjoy intelligent support powered by AI</p>
+            </section>
+
+            <!-- Right: Step Cards -->
+            <section class="steps-container">
+                <!-- Step 1 -->
+                <div class="step-card expanded completed">
+                    <div class="step-header">
+                        <div class="step-icon"><i class="fas fa-plug"></i></div>
+                        <div class="step-info">
+                            <div class="step-label">STEP 1</div>
+                            <h3 class="step-title">Pick a connection type</h3>
+                            <div class="step-value">New Connection</div>
+                        </div>
+                        <div class="step-status">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <button class="change-btn">Change</button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card expanded active">
+                    <div class="step-header">
+                        <div class="step-icon"><i class="fas fa-address-card"></i></div>
+                        <div class="step-info">
+                            <div class="step-label">STEP 2</div>
+                            <h3 class="step-title">Add contact details</h3>
+                        </div>
+                        <div class="step-indicator">
+                            <span class="pulse-dot"></span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Mobile number*</label>
+                                <input type="text" placeholder="Exc 9811001234" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Exc Rahul Kumar" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card collapsed">
+                    <div class="step-header">
+                        <div class="step-icon inactive"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="step-info">
+                            <div class="step-label">STEP 3</div>
+                            <h3 class="step-title">Add delivery address to view plans</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card collapsed">
+                    <div class="step-header">
+                        <div class="step-icon inactive"><i class="fas fa-file-alt"></i></div>
+                        <div class="step-info">
+                            <div class="step-label">STEP 4</div>
+                            <h3 class="step-title">Select a plan</h3>
+                        </div>
+                    </div>
+                    <div class="info-badge">
+                        <span class="badge-highlight">Top OTTs & unlimited 5G included</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Floating Launcher -->
+    <button class="launcher-btn" id="launcher-btn">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Chat Widget Container -->
+    <div class="chat-widget" id="chat-widget">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-info">
+                <div class="avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="title-area">
+                    <h3>AI Assistant</h3>
+                    <div class="status">
+                        <span class="dot"></span> Online
+                    </div>
+                </div>
+            </div>
+            <button class="minimize-btn" id="minimize-btn">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </header>
+
+        <!-- Chat Area -->
+        <div class="chat-area" id="chat-area">
+            <!-- Welcome Message -->
+            <div class="message bot">
+                <div class="bubble">
+                    Hello! 👋 I'm your AI assistant. How can I help you today?
+                </div>
+                <div class="message-meta">Now</div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <button class="chip" data-query="Internet is slow">🚀 Slow Internet</button>
+                <button class="chip" data-query="Check my billing status">💳 Billing Issue</button>
+                <button class="chip" data-query="I want to talk to a human">👤 Human Agent</button>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing" id="typing-indicator" style="display: none;">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Type your issue..." autocomplete="off">
+            <button class="send-btn" id="send-btn">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

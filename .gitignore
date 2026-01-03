@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# Flask
+instance/
+.webassets-cache
+
+# Environment variables
+.env
+
+# Data files
+data/*.pkl
+data/tfidf_index.pkl
+data/faiss_index.bin
+data/metadata.pkl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Large files
+*.mp4
+*.webp
+*.bin
+
+# Other repos
+42_suryavamsi/
